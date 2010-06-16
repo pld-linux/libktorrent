@@ -7,12 +7,12 @@
 Summary:	libktorrent
 Summary(pl.UTF-8):	libktorrent
 Name:		libktorrent
-Version:	1.0.0
+Version:	1.0.1
 Release:	1
 License:	GPL
 Group:		X11/Libraries
-Source0:	http://ktorrent.org/downloads/4.0/%{name}-%{version}.tar.bz2
-# Source0-md5:	b409ef0381343d998abce8c85073f7d3
+Source0:	http://ktorrent.org/downloads/4.0.1/%{name}-%{version}.tar.bz2
+# Source0-md5:	aec4afb50a790cd2c1d990bc8a98a6bf
 URL:		http://ktorrent.org/
 BuildRequires:	automoc4 >= 0.9.88
 BuildRequires:	cmake >= 2.8.0
