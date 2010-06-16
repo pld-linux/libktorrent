@@ -61,6 +61,9 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} -C build install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+# remove unsupported langs
+rm -rf $RPM_BUILD_ROOT%{_datadir}/locale/sr@ijekavian*
+
 %find_lang %{name} --with-kde
 
 %clean
