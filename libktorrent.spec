@@ -1,14 +1,14 @@
 #
 # Conditional build:
 #
-%define		qtver		4.6.2
-%define		kdever		4.4.4
+%define		qtver		4.6.3
+%define		kdever		4.5.0
 
 Summary:	libktorrent
 Summary(pl.UTF-8):	libktorrent
 Name:		libktorrent
 Version:	1.0.2
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Libraries
 Source0:	http://ktorrent.org/downloads/4.0.2/%{name}-%{version}.tar.bz2
