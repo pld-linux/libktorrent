@@ -3,17 +3,16 @@
 #
 %define		qtver		4.6.3
 %define		kdever		4.5.0
-%define		_mver		3
 
 Summary:	libktorrent
 Summary(pl.UTF-8):	libktorrent
 Name:		libktorrent
-Version:	1.0.5
+Version:	1.1.0
 Release:	1
 License:	GPL
 Group:		X11/Libraries
-Source0:	http://ktorrent.org/downloads/4.0.5/%{name}-%{version}-%{_mver}.tar.bz2
-# Source0-md5:	31f0397a28557220ce38fe2c8630826d
+Source0:	http://ktorrent.org/downloads/4.1.0/%{name}-%{version}.tar.bz2
+# Source0-md5:	76d3e58bbf2e4df7e97421e06ebf8fb8
 URL:		http://ktorrent.org/
 BuildRequires:	automoc4 >= 0.9.88
 BuildRequires:	cmake >= 2.8.0
@@ -42,7 +41,7 @@ Header files for ktorrent library.
 Pliki nagłówkowe biblioteki ktorrent.
 
 %prep
-%setup -q -n %{name}-%{version}-%{_mver}
+%setup -q
 
 %build
 install -d build
