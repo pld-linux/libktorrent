@@ -3,16 +3,17 @@
 #
 %define		qtver		4.6.3
 %define		kdever		4.5.0
+%define		ktorrentver 4.1.2
 
 Summary:	libktorrent
 Summary(pl.UTF-8):	libktorrent
 Name:		libktorrent
-Version:	1.1.0
+Version:	1.1.2
 Release:	1
 License:	GPL
 Group:		X11/Libraries
-Source0:	http://ktorrent.org/downloads/4.1.0/%{name}-%{version}.tar.bz2
-# Source0-md5:	76d3e58bbf2e4df7e97421e06ebf8fb8
+Source0:	http://ktorrent.org/downloads/%{ktorrentver}/%{name}-%{version}.tar.bz2
+# Source0-md5:	471b25afc48e195723ac1e264c8a0fc5
 URL:		http://ktorrent.org/
 BuildRequires:	automoc4 >= 0.9.88
 BuildRequires:	cmake >= 2.8.0
@@ -63,6 +64,10 @@ rm -rf $RPM_BUILD_ROOT
 
 # remove unsupported langs
 rm -rf $RPM_BUILD_ROOT%{_datadir}/locale/sr@ijekavian*
+rm -rf $RPM_BUILD_ROOT%{_datadir}/locale/ar
+rm -rf $RPM_BUILD_ROOT%{_datadir}/locale/hr
+rm -rf $RPM_BUILD_ROOT%{_datadir}/locale/se
+rm -rf $RPM_BUILD_ROOT%{_datadir}/locale/si
 
 %find_lang %{name} --with-kde
 
