@@ -9,7 +9,7 @@ Summary:	libktorrent
 Summary(pl.UTF-8):	libktorrent
 Name:		libktorrent
 Version:	1.1.3
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Libraries
 Source0:	http://ktorrent.org/downloads/%{ktorrentver}/%{name}-%{version}.tar.bz2
