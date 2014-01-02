@@ -9,15 +9,17 @@ Summary:	libktorrent
 Summary(pl.UTF-8):	libktorrent
 Name:		libktorrent
 Version:	1.1.3
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Libraries
 Source0:	http://ktorrent.org/downloads/%{ktorrentver}/%{name}-%{version}.tar.bz2
 # Source0-md5:	665b6139ab68b83c6465509e29e839e0
+Patch0:		link.patch
 URL:		http://ktorrent.org/
 BuildRequires:	automoc4 >= 0.9.88
 BuildRequires:	cmake >= 2.8.0
 BuildRequires:	kde4-kdelibs-devel >= %{kdever}
+BuildRequires:	qca-devel
 BuildRequires:	qt4-build >= %{qtver}
 BuildRequires:	qt4-qmake >= %{qtver}
 BuildRequires:	rpmbuild(macros) >= 1.293
@@ -43,6 +45,7 @@ Pliki nagłówkowe biblioteki ktorrent.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 install -d build
